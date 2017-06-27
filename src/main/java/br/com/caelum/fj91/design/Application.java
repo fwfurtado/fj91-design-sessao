@@ -1,12 +1,12 @@
-package br.com.caelum;
+package br.com.caelum.fj91.design;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Fj91DesignApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Fj91DesignApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
