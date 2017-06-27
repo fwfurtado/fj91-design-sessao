@@ -1,12 +1,19 @@
 package br.com.caelum.fj91.design.domain;
 
+import javax.persistence.*;
 import java.time.LocalTime;
 
 /**
  * Created by nando on 27/06/17.
  */
+@Entity
 public class Sessao implements Comparable<Sessao>{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
     private Filme filme;
     private LocalTime horario;
 
